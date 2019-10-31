@@ -23,6 +23,11 @@ class Node {
     else
       fill(125, 125, 125);
 
+
+    if (this.visitada && !this.ladrao && !this.pintura && !this.sendoAnalisada)
+      fill(0, 100, 150)
+
+
     rect(this.x, this.y, this.t, this.t);
 
   }
@@ -46,18 +51,5 @@ class Node {
     fill(0);
     text(this.d == null ? '' : this.d.toFixed(2), this.x + (this.t / 3.8), this.y + (this.t / 1.5))
   }
-
-}
-
-
-
-
-
-
-
-
-
-
-function a() {
 
 }
