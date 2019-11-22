@@ -1,7 +1,7 @@
 var size = 40;
 var grid = [];
-var w = 600;
-var h = 600;
+var w = window.innerWidth;
+var h = window.innerHeight;
 var cols = (w / size);
 var rows = (h / size);
 
